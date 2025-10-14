@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+header {
+  padding: 50px;
+  background-color: #00809D;
+}
+header h1 {
+  text-align: center;
+  color: #FAEAB1;
+}
+
+aside {
+  background-color: #FFE6E1;
+  padding: 10px;
+}
+aside a {
+  display: block;
+  font-size: 2cap;
+  padding: 10px;
+}
+
+#citydetails > h2 {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+#citydetails > p {
+  padding: 10px;
+}
+
+footer {
+  padding: 25px;
+  background-color: #00809D;
+}
+footer h3 {
+  text-align: center;
+  color: #FAEAB1;
+}/*# sourceMappingURL=style.css.map */
