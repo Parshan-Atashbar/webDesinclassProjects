@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Please enter your username" id="uname">
+    <input type="password" placeholder="Please enter your password" id="password">
+    <br>
+    <p id="demo"></p>
+    <button onclick="login()">login</button>
+
+    <script>
+        let uname = document.querySelector("#uname");
+        let psw = document.querySelector("#password");
+        let age = document.querySelector("#age");
+
+        let demo = document.querySelector("#demo");
+
+        function login() {
+            if (uname.value === "admin") {
+                if (psw.value === "123456") {
+                    demo.textContent = "hello" + " " + uname.value;
+                } else {
+                    demo.innerHTML = "wrong <b>pass</b> or <b>username</b>";
+                }
+            } else {
+                ;
+                demo.innerHTML = "weong <b>user name</b> or <b>Password</b>";
+            }
+        
+            
+        }
+    </script>
+</body>
+
+</html>
