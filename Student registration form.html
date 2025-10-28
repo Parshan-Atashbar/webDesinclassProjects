@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        header {
+            text-align: center;
+            font-size: 50px;
+            margin: 18px;
+        }
+
+        button {
+            text-align: right;
+            padding-right: 50px;
+        }
+        #namemodal{
+            font-size: large;
+            font-style: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>لیست دانش جویان ثبت نامی</h3>
+    </header>
+    <button style="margin-right: 500px;" id="button" type="button" class="btn btn-success" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">افزودن دانشحو</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">افزودن دانشجو</h1>
+                    <button style="margin-right: 313px;" type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="namemodal">نام </p>
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <p id="namemodal">کد ملی</p>
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <p id="namemodal">سن</p>
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button style="margin-right: 298px;" type="button" class="btn btn-success">اضافه کردن</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">بستن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
